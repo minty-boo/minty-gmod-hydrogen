@@ -186,7 +186,7 @@ function mod.patch.draw.BlurredBox( x, y, w, h, fraction )
     local scrH = ScrH()
     
     local x1 = x + w
-    local y1 = h + 2
+    local y1 = y + h
 
     for i = 1.65, 5, 1.65 do
         IMATERIAL_SetFloat( material_blurscreen, "$blur", fraction * i )
